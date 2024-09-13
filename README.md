@@ -37,6 +37,8 @@ The app contains the following functions:
         - Owner of the shopping list is able to give read or write permissions when sharing their shopping list to other users.
         - The shopping list updates in real time for all users sharing the list. Any additions or removals are instantly reflected, ensuring that everyone viewing the shopping list sees the most up-to-date version without needing to refresh the screen.
 * **Detailed Spendings**
+    - User is able to specificy a specfici timeframe (E.g. 12th March - August 10th) and view a detailed overview of their spendings in each category.
+    - Pie charts and bar charts are displayed to provide a clearer and more intuitive way to visualize the information, making it easier for users to analyze their spending patterns.
 
 ## Video Showcase
 Click the image below to view a video showcasing the entire app and how to use each feature:
