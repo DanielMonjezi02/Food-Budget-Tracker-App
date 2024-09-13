@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodTracker"
+        tools:targetApi="31">
+        <activity
+            android:name=".CreateProduct"
+            android:exported="false" />
+        <activity
+            android:name=".SecurityAndPrivacy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faq"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageUs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProductDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryProductList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserSettings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Spendings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShoppingListSettings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomScannerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShoppingList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Diary"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuestPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BarcodeScanner"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginUser"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homepage"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

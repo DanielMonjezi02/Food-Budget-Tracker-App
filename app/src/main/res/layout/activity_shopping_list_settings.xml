@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingListSettings"
+    android:background="@color/backgroundcolour">
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#28282B"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Shopping List Settings"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:background="@drawable/transparent_background"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/userListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="List of Users"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <View
+        android:id="@+id/userListBar"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userListHeading"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userListBar" />
+
+    <View
+        android:id="@+id/listViewBar"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#28282B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview"/>
+
+    <Button
+        android:id="@+id/leaveShoppingList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Leave Shopping List"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        android:backgroundTint="#528AAE"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBar"
+        />
+
+    <TextView
+        android:id="@+id/addUserHeading"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Add User"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview" />
+
+    <View
+        android:id="@+id/addUserBar"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addUserHeading"/>
+
+
+    <RelativeLayout
+        android:id="@+id/addUserView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/addUserBar">
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#528AAE"
+            android:ems="10"
+            android:hint="Enter email address here" />
+
+        <Button
+            android:id="@+id/addUser"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Add User"
+            android:textSize="13.5dp"
+            android:backgroundTint="#528AAE"
+            />
+
+        <Spinner
+            android:id="@+id/permissionLevelSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:layout_toEndOf="@+id/inputEmail" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
